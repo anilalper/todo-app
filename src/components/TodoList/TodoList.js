@@ -8,8 +8,8 @@ function TodoList(props) {
       <ul>
         {props.todos.map((todo) => {
           return (
-            <li className="list-group-item">
-              <TodoItem {...todo} key={todo.id} />
+            <li className="list-group-item" key={todo.id}>
+              <TodoItem {...todo} key={todo.id} done={todo.done} removeTodo={props.removeTodo}/>
             </li>
           );
         })}
