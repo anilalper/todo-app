@@ -7,8 +7,7 @@ function Todo(props) {
   const click = (e) =>{
     debugger;
     done=!(done);
-    if(e.target.tagName !== "BUTTON")
-      e.target.firstChild.classList.toggle("line-through");
+  
    }
    return (
     <div className="d-flex" onClick = {click}>
